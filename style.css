@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar a{
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  transform: scale(1.08);
+}
+
+.logo h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  height: auto;
+  width: auto;
+  display: block;
+  text-decoration: none;
+  color: #125c3c;
+
+}
+
+.nav-section {
+  display: flex;
+  list-style: none;
+}
+
+.nav-section li {
+  margin-left: 20px;
+}
+
+.nav-section a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+.nav-section a:hover {
+  text-decoration: underline;
+  text-decoration-color: #00B466;
+  text-decoration-thickness: 3px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url(herobanner.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color:white;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.section-bg2 {
+  padding: 60px 20px;
+  background-color: #f5f5f0;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease-out;
+}
+
+.product img:hover {
+  transform: scale(1.08);
+}
+
+.product-card h3 {
+  margin: 15px 0 5px 0;
+}
+
+.price {
+  color: #888888;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.atc-btn {
+  background-color: white;
+  border: 2px solid #1a1a1a;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  margin-top: auto; 
+}
+
+.atc-btn:hover{
+  color: white;
+  background-color: #282928;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.about-us-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-us-left img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.about-us-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  padding: 40px;     
+  min-width: 300px;
+  max-width: fit-content;        
+  text-align: center;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.review-card h4 {
+  margin-top: 10px;
+  color: #666666;
+}
+
+.footer {
+  background-color: #00B466;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 30px;
+  }
+}

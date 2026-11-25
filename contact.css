@@ -1,0 +1,189 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar a{
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  transform: scale(1.08);
+}
+
+.logo h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  height: auto;
+  width: auto;
+  display: block;
+  text-decoration: none;
+  color: #125c3c;
+
+}
+
+.nav-section {
+  display: flex;
+  list-style: none;
+}
+
+.nav-section li {
+  margin-left: 20px;
+}
+
+.nav-section a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+.nav-section a:hover {
+  text-decoration: underline;
+  text-decoration-color: #00B466;
+  text-decoration-thickness: 3px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.contact-title h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-title p {
+    text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.contact-info, .contact-msg {
+  flex: 1;
+  padding: 30px;
+  background: #f5f5f0;
+  border-radius: 10px;
+}
+
+.contact-info img {
+  border-radius: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  font-size: large;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-msg h3 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-msg form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-msg input, .contact-msg textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-msg textarea {
+  resize: vertical;
+}
+
+.contact-msg button {
+  display: block;
+  margin: 0 auto;
+  background-color: #00B466;
+  color: white;
+  padding: 20px 20px;
+  width: 200px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#confirmation {
+    display: block;
+    color: #52734d;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer {
+  background-color: #00B466;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
